@@ -3,7 +3,7 @@ services:
     restart: on-failure
     container_name: app-frontend
     build: "./"
-    image: myapp
+    image: myapp3
     ports: 
       - "3000:3000"
     expose: 
