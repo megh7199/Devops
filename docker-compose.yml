@@ -1,0 +1,12 @@
+services:
+  app-frontend:
+    restart: on-failure
+    container_name: app-frontend
+    build: "./"
+    image: myapp
+    ports: 
+      - "3000:3000"
+    expose: 
+      - "3000" 
+    stdin_open: true
+    tty: true
